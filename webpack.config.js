@@ -1,7 +1,7 @@
 module.exports = {
     mode: 'production',
     // Путь до входного JS-файл
-    entry: './src/index.js',
+    entry: './src/index.ts',
     // Размещение настроек файла после сборки
     output: {
         filename: 'index.js'
@@ -28,6 +28,14 @@ module.exports = {
                   "sass-loader",
                 ],
             },
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
         ]
-    }
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
+    },
 }
