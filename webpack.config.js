@@ -38,4 +38,11 @@ module.exports = {
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
     },
+    devServer: {
+        static: {
+          directory: './src',
+        },
+        compress: true,
+        port: 9000,
+    },
 }
