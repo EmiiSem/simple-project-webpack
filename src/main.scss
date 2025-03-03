@@ -26,6 +26,38 @@
 	}
 }
 
-main {
-	padding-top: 50px;
+.page-section {
+	padding-top: 100px;
+	&-description {
+		width: 50%;
+		font-size: 18px;
+	}
+	&-info-cart-image {
+		width: 100px;
+		height: 100px;
+		cursor: pointer;
+	}
+	&-info-title {
+		font-weight: bold;
+		font-size: 18px;
+		text-align: center;
+	}
+	&-info-carts {
+		display: flex;
+		justify-content: space-between;
+	}
+	&-info-cart {
+		width: 100px;
+	}
+	&-info-cart-text {
+		text-align: center;
+	}
+}
+
+.container {
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 16px;
+	padding-right: 16px;
 }
